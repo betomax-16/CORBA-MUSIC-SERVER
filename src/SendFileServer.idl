@@ -1,0 +1,9 @@
+module SendFileServer
+{
+  typedef sequence<octet> Buffer;
+  interface SendFile
+  {
+	  Buffer download(in string ID);
+	  oneway void shutdown();
+  };
+};
